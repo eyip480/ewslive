@@ -80,8 +80,10 @@ firebase.initializeApp(firebaseConfig);
             
 //melakukan call back pada node firebase      
 var db = firebase.database();
-var gyro = db.ref("/Jarak");
-var angin = db.ref("/Gyro");
+var angin = db.ref("/Jarak");
+var gyro = db.ref("/Gyro");;
+var tes = db.ref("/Tes");;
+var coba = db.ref("/Coba");
 
 
     am4core.ready(function() {
@@ -442,7 +444,7 @@ am4core.ready(function() {
     var interval;
     function startInterval() {
         interval = setInterval(function() {
-            angin.on("value", function(snapshot) {
+            tes.on("value", function(snapshot) {
             //console.log(snapshot.val())
             visits=  (snapshot.val());
                 });
@@ -582,7 +584,7 @@ am4core.ready(function() {
     var interval;
     function startInterval() {
         interval = setInterval(function() {
-            angin.on("value", function(snapshot) {
+            coba.on("value", function(snapshot) {
             //console.log(snapshot.val())
             visits=  (snapshot.val());
                 });
