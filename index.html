@@ -301,7 +301,7 @@ am4core.ready(function() {
     var interval;
     function startInterval() {
         interval = setInterval(function() {
-            angin.on("value", function(snapshot) {
+            gyro.on("value", function(snapshot) {
             //console.log(snapshot.val())
             visits=  (snapshot.val());
                 });
