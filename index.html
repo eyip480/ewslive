@@ -43,13 +43,13 @@
     <!-- Resources -->
     
 <!-- HTML -->
-<p align="center"><b>Anemometer</b></p>
+<p align="right"><b>Anemometer</b></p>
 <div id="chartdiv"></div>
-<b>Puting Beliung</b><br/>
+<b>Gempa</b><br/>
 <div id="chartdiv1"></div>
-<p align="right"><b>Gempa</b></p>
+<p align="right"><b>Ketinggian Air Sungai 2</b></p>
 <div id="chartdiv2"></div>
-<b>Ketinggian Air Laut</b><br/>
+<b>Ketinggian Air Sungai 1</b><br/>
 <div id="chartdiv3"></div>
 <script src="core.js"></script>
 <script src="chartzz.js"></script>
@@ -81,9 +81,9 @@ firebase.initializeApp(firebaseConfig);
 //melakukan call back pada node firebase      
 var db = firebase.database();
 var angin = db.ref("/Jarak");
-var gyro = db.ref("/Gyro");;
-var tes = db.ref("/Tes");;
-var coba = db.ref("/Coba");
+var gyro = db.ref("/Gempa");;
+var tes = db.ref("/Coba");;
+var coba = db.ref("/Test");
 
 
     am4core.ready(function() {
